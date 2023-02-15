@@ -85,36 +85,7 @@ for (let i = 0; i < addBtns.length; i++) {
     });
 }
 
-// let plusBtns = document.getElementsByClassName("plus");
-// let minusBtns = document.getElementsByClassName("minus");
-// let deleteBtns = document.getElementsByClassName("delete");
 
-// for (let i = 0; i < plusBtns.length; i++) {
-//     plusBtns[i].addEventListener("click", function() {
-//         cart[i].qtty++;
-//         document.getElementsByClassName("cart-price").innerHTML = cart[i].qtty;
-//         total();
-//     });
-
-//     minusBtns[i].addEventListener("click", function() {
-//         if (cart[i].qtty == 1) {
-//             cart.splice(i, 1);
-//             createCart();
-//             total();
-//         } else {
-//             cart[i].qtty--;
-//             document.getElementsByClassName("cart-price").innerHTML = cart[i].qtty;
-//             total();
-//         }
-//     });
-
-//     deleteBtns[i].addEventListener("click", function() {
-//         cart[i].qtty = 1;
-//         cart.splice(i, 1);
-//         createCart();
-//         total();
-//     });
-// }
 
 function addToCart(obj) {
     if (cart.find(function(val) { return val.name == obj.name })) {
@@ -127,6 +98,7 @@ function addToCart(obj) {
 }
 
 function createCart() {
+    document.getElementById("cart").innerHTML = "";
     for (let val of cart) {
         document.getElementById("cart").innerHTML += `
         <div class="cart-row row gx-0">
@@ -148,10 +120,40 @@ function createCart() {
                     </div>
                     <div class="cart-price col-3 h5 my-auto text-end p-2 pe-sm-5">${val.price} €</div>
                     <hr>
-                    <div class="h5 my-auto text-end pe-3" id="total"></div>
+                    
                 </div>                    
                 </div>
         `
+    }
+    let plusBtns = document.getElementsByClassName("plus");
+    let minusBtns = document.getElementsByClassName("minus");
+    let deleteBtns = document.getElementsByClassName("delete");
+
+    for (let i = 0; i < plusBtns.length; i++) {
+        plusBtns[i].addEventListener("click", function() {
+            cart[i].qtty++;
+            document.getElementsByClassName("cart-quantity")[i].innerHTML = cart[i].qtty;
+            total();
+        });
+
+        minusBtns[i].addEventListener("click", function() {
+            if (cart[i].qtty == 1) {
+                cart.splice(i, 1);
+                createCart();
+                total();
+            } else {
+                cart[i].qtty--;
+                document.getElementsByClassName("cart-quantity")[i].innerHTML = cart[i].qtty;
+                total();
+            }
+        });
+
+        deleteBtns[i].addEventListener("click", function() {
+            cart[i].qtty = 1;
+            cart.splice(i, 1);
+            createCart();
+            total();
+        });
     }
 }
 
