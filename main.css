@@ -9,6 +9,37 @@ body {
   background-color: antiquewhite;
 }
 
+body .navbar {
+  background-color: #534d42;
+}
+
+body .navbar .navbar-brand {
+  color: antiquewhite;
+}
+
+body .navbar .nav-link {
+  color: antiquewhite;
+}
+
+body .navbar .dropdown-menu {
+  background-color: #534d42;
+}
+
+body .navbar .dropdown-menu .dropdown-item {
+  color: antiquewhite;
+}
+
+body .navbar .dropdown-menu .dropdown-item:hover {
+  background-color: antiquewhite;
+  color: #534d42;
+}
+
+body .navbar .bi-cart4 {
+  color: antiquewhite;
+  font-size: x-large;
+  cursor: pointer;
+}
+
 body .allCards {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -19,5 +50,21 @@ body .plus,
 body .minus,
 body .delete {
   cursor: pointer;
+}
+
+body footer {
+  background-color: #534d42;
+  color: antiquewhite;
+}
+
+body footer .input-group-text {
+  background-color: #534d42;
+  border: none;
+  color: antiquewhite;
+}
+
+body footer .input-group-text .btn {
+  background-color: #534d42;
+  color: antiquewhite;
 }
 /*# sourceMappingURL=main.css.map */

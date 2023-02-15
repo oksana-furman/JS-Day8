@@ -12,12 +12,66 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">The Florist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Flowers</a></li>
+                            <li><a class="dropdown-item" href="#">Bouquets</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <i class="bi bi-cart4" id="cartIcon"></i>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+
     <div class="container">
         <div class="row row-cols-3" id="products"></div>
         <div id="cart"></div>
         <div class="h5 my-auto text-end pe-3" id="total"></div>
     </div>
 
+
+    <!-- footer begins here -->
+    <footer class="pt-2 mt-1">
+        <nav class="container">
+            <div class="input-group-text text-white">
+                <p class="text-center me-2 pt-3">Sign up for our newsletter</p>
+                <input type="text" class="form-control" aria-label="Username">
+                <button type="button" class="btn border-white ms-2">Subscribe</button>
+            </div>
+            <p class="text-center text-white"> &#169; 2023 Copyright Oksana Furman</p>
+        </nav>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="main.js"></script>

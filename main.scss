@@ -5,6 +5,30 @@
 }
 
 body {
+    .navbar {
+        background-color: rgb(83, 77, 66);
+        .navbar-brand {
+            color: antiquewhite;
+        }
+        .nav-link {
+            color: antiquewhite;
+        }
+        .dropdown-menu {
+            background-color: rgb(83, 77, 66);
+            .dropdown-item {
+                color: antiquewhite;
+            }
+            .dropdown-item:hover {
+                background-color: antiquewhite;
+                color: rgb(83, 77, 66);
+            }
+        }
+        .bi-cart4 {
+            color: antiquewhite;
+            font-size: x-large;
+            cursor: pointer;
+        }
+    }
     background-color: antiquewhite;
     .allCards {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -14,5 +38,18 @@ body {
     .minus,
     .delete {
         cursor: pointer;
+    }
+    footer {
+        background-color: rgb(83, 77, 66);
+        color: antiquewhite;
+        .input-group-text {
+            background-color: rgb(83, 77, 66);
+            border: none;
+            color: antiquewhite;
+            .btn {
+                background-color: rgb(83, 77, 66);
+                color: antiquewhite;
+            }
+        }
     }
 }

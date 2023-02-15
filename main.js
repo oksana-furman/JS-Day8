@@ -166,3 +166,6 @@ function total() {
     document.getElementById("total").innerHTML = `Total: ${total} €`
 
 }
+// document.getElementById("cartIcon").addEventListener("click", function() {
+
+// })
